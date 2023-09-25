@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-ykef
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoup_perfscale/ci10t-786-0042-tenant/ci10t-786-0042-app/devfile-sample-ykef@sha256:2ecc473b84514689e393bdbc2ce768cf8f403a7122654edb9a501c0a0df8159f
+        name: my-nodejs
+        resources: {}
+status: {}
